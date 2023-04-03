@@ -94,6 +94,15 @@
             outline: none;
             font-size: 15px;
         }
+
+        .senha{
+            border: none;
+            padding: 8px;
+            border-radius: 10px;
+            outline: none;
+            font-size: 15px;
+        }
+
         #submit{
             background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
             width: 100%;
@@ -114,7 +123,7 @@
     <div class="box">
         <form action="saveEdit.php" method="POST">
             <fieldset>
-                <legend><b>Editar Cliente</b></legend>
+                <legend><b>Editar Cadastro</b></legend>
                 <br>
                 <div class="inputBox">
                     <input type="text" name="nome" id="nome" class="inputUser" value=<?php echo $nome;?> required>
@@ -145,8 +154,11 @@
                 <input type="radio" id="o" name="genero" value="o" <?php echo ($genero == 'o') ? 'checked' : '';?> required>
                 <label for="o">O</label>
                 <br><br>
-                <input type="text" name="senha" id="senha" class="inputUser" value=<?php echo $senha;?> required>
+                <br>
+                <div class="inputBox">
+                    <input type="text" name="senha" id="senha" class="inputUser" value=<?php echo $senha;?> required>
                     <label for="senha" class="labelInput">Senha</label>
+                </div>
                 <br><br><br>
 				<input type="hidden" name="id" value=<?php echo $id;?>>
                 <input type="submit" name="update" id="submit">
