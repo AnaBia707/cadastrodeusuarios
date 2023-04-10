@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DEVPLUS</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Anton&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Anek+Devanagari:wght@700&family=Public+Sans:wght@200&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Alumni Sans', sans-serif;
-            background-image: linear-gradient(88deg, black, yellow);
+            font-family: 'Anek Devanagari', sans-serif;
+            background-color: #DD8F24;
             text-align: center;
             color: white;
         }
@@ -20,7 +19,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-            background-color: rgba(0, 0, 0, 0.6);
+            background: rgba(2, 2, 2, 0.3);
             padding: 30px;
             border-radius: 15px;
         }
@@ -28,10 +27,9 @@
         a {
             text-decoration: none;
             color: white;
-            border: 3px solid #ffeb01;
+            border: 3px solid black;
             border-radius: 15px;
             padding: 5px;
-            font-family: 'Anton', sans-serif;
         }
     </style>
 </head>

@@ -46,12 +46,12 @@
             background-color: #DD8F24;
         }
         .box{
-            color: white;
+            color: black;
             position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%,-50%);
-            background-color: rgba(0, 0, 0, 0.6);
+            background-color: rgba(2, 2, 2, 0.3);
             padding: 15px;
             border-radius: 15px;
             width: 20%;
@@ -60,6 +60,7 @@
             border: 3px solid black;
         }
         legend{
+            color: white;
             padding: 10px;
             text-align: center;
             background-color: black;
@@ -111,7 +112,7 @@
             font-family: 'Anek Devanagari', sans-serif;
             background-color: black;
             width: 28px%;
-            margin-left: 90px;
+            margin-left: 93px;
             border: none;
             padding: 15px;
             color: white;

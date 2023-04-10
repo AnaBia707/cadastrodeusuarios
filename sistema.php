@@ -26,16 +26,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Public+Sans:wght@200&family=Sora:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Anek+Devanagari:wght@700&family=Public+Sans:wght@200&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>EDIÇÃO DE CADASTRO</title>
     <style>
         body{
-            background: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+            background-color: #DD8F24;
             color: white;
             text-align: center;
+            font-family: 'Sora', sans-serif;
+
         }
+
+        h1{
+            font-family: 'Anek Devanagari', sans-serif;
+        }
+
         .table-bg{
-            background: rgba(0, 0, 0, 0.3);
+            background: rgba(2, 2, 2, 0.3);
             border-radius: 15px 15px 0 0;
         }
 
@@ -47,20 +57,16 @@
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
         </div>
-        <div class="d-flex">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
             <a href="sair.php" class="btn btn-danger me-5">Sair</a>
         </div>
-    </nav>
     <br>
     <?php
-        echo "<h1>Bem vindo <u>$logado</u></h1>";
+        echo "<h1>Bem vindo, <u>$logado</u></h1>";
     ?>
     <br>
     <div class="box-search">

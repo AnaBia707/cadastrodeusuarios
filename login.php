@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Anek+Devanagari:wght@700&family=Public+Sans:wght@200&display=swap" rel="stylesheet">
+
     <title>Tela de login</title>
     <style>
         body{
-            font-family: Arial, Helvetica, sans-serif;
-            background: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+            font-family: 'Anek Devanagari', sans-serif;
+            background-color: #DD8F24;
         }
         div{
-            background-color: rgba(0, 0, 0, 0.6);
+            background: rgba(2, 2, 2, 0.3);
             position: absolute;
             top: 50%;
             left: 50%;
@@ -27,17 +31,18 @@
             font-size: 15px;
         }
         .inputSubmit{
-            background-color: dodgerblue;
+            font-family: 'Anek Devanagari', sans-serif;
+            background-color: black;
             border: none;
             padding: 15px;
             width: 100%;
             border-radius: 10px;
             color: white;
-            font-size: 15px;
+            font-size: 20px;
             
         }
         .inputSubmit:hover{
-            background-color: deepskyblue;
+            background-color: orange;
             cursor: pointer;
         }
     </style>
