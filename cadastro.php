@@ -9,7 +9,7 @@ if (isset($_POST['submit'])) {
     $genero = $_POST['genero'];
     $senha = $_POST['senha'];
 
-    $result = mysqli_query($conexao, "INSERT INTO usuarios(nome, email, telefone, data_nascimento, genero, senha) VALUES ('$nome', '$email', '$telefone', '$dt_nascimento', '$genero', '$senha')");
+    $result = mysqli_query($conexao, "INSERT INTO usuarios(nome, email, telefone, data_nascimento, genero, senha) VALUES ('$nome', '$email', '$telefone', '$data_nascimento', '$genero', '$senha')");
 }
 ?>
 
@@ -22,25 +22,27 @@ if (isset($_POST['submit'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Roboto:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Anton&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Public+Sans:wght@200&family=Sora:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Anek+Devanagari:wght@700&family=Public+Sans:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <style>
         body {
-            font-family: 'Alumni Sans', sans-serif;
-            background-color: white;
+            font-family: 'Sora', sans-serif;
+            background-color: #DD8F24;
         }
 
         h1 {
             color: black;
-            font-family: 'Anton', sans-serif;
+            font-family: 'Anek Devanagari', sans-serif;
             text-align: center;
             margin-top: 50px;
+            font-size: 28px;
         }
 
         form {
             background-color: #fff;
-            border-radius: 5px;
+            border-radius: 10px;
             padding: 20px;
             margin: auto;
             max-width: 600px;
@@ -65,16 +67,10 @@ if (isset($_POST['submit'])) {
         }
 
         input[type=submit] {
-            background-color: #4CAF50;
-            color: white;
             padding: 12px 20px;
             border: none;
-            border-radius: 4px;
+            border-radius: 10px;
             cursor: pointer;
-        }
-
-        input[type=submit]:hover {
-            background-color: #45a049;
         }
 
         .row:after {
@@ -91,18 +87,22 @@ if (isset($_POST['submit'])) {
             float: left;
             width: 25%;
             margin-top: 6px;
+            font-size: 20px;
         }
 
         .col-75 {
             float: left;
             width: 75%;
             margin-top: 6px;
+            font-size: 13px;
         }
 
         #submit {
-            background-color: #ffeb01;
-            color: #000000;
-            font-family: 'Anton', sans-serif;
+            background-color: black;
+            color: white;
+            font-family: 'Anek Devanagari', sans-serif;
+            margin-left: -13px;
+            font-size: 15px;
         }
 
         @media screen and (max-width: 600px) {
@@ -128,6 +128,7 @@ if (isset($_POST['submit'])) {
 				<input type="text" id="nome" name="nome" placeholder="Digite seu nome">
 			</div>
 		</div>
+        <br>
 		<div class="row">
 			<div class="col-25">
 				<label for="email">E-mail:</label>
@@ -136,6 +137,7 @@ if (isset($_POST['submit'])) {
 				<input type="text" id="email" name="email" placeholder="Digite seu e-mail">
 			</div>
 		</div>
+        <br>
 		<div class="row">
 			<div class="col-25">
 				<label for="telefone">Telefone:</label>
@@ -144,6 +146,7 @@ if (isset($_POST['submit'])) {
 				<input type="text" id="telefone" name="telefone" placeholder="Digite seu telefone">
 			</div>
 		</div>
+        <br>
 		<div class="row">
             <div class="col-25">
                 <label for="data_nascimento">Data de nascimento:</label>
@@ -152,6 +155,7 @@ if (isset($_POST['submit'])) {
                 <input type="date" id="data_nascimento" name="data_nascimento">
             </div>
         </div>
+        <br>
         <div class="row">
     <div class="col-25">
         <label for="genero">Gênero:</label>
@@ -164,6 +168,7 @@ if (isset($_POST['submit'])) {
         </select>
     </div>
 </div>
+<br>
 <div class="row">
     <div class="col-25">
         <label for="senha">Senha:</label>
