@@ -34,11 +34,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro | DEVPLUS</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Public+Sans:wght@200&family=Sora:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans&family=Anek+Devanagari:wght@700&family=Public+Sans:wght@200&display=swap" rel="stylesheet">
+
+    <title>Editar cadastro | DEVPLUS</title>
     <style>
         body{
-            font-family: Arial, Helvetica, sans-serif;
-            background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+            font-family: 'Sora', sans-serif;
+            background-color: #DD8F24;
         }
         .box{
             color: white;
@@ -52,13 +57,12 @@
             width: 20%;
         }
         fieldset{
-            border: 3px solid dodgerblue;
+            border: 3px solid black;
         }
         legend{
-            border: 1px solid dodgerblue;
             padding: 10px;
             text-align: center;
-            background-color: dodgerblue;
+            background-color: black;
             border-radius: 8px;
         }
         .inputBox{
@@ -69,7 +73,7 @@
             border: none;
             border-bottom: 1px solid white;
             outline: none;
-            color: white;
+            color: black;
             font-size: 15px;
             width: 100%;
             letter-spacing: 2px;
@@ -85,7 +89,7 @@
         .inputUser:valid ~ .labelInput{
             top: -20px;
             font-size: 12px;
-            color: dodgerblue;
+            color: black;
         }
         #data_nascimento{
             border: none;
@@ -104,18 +108,18 @@
         }
 
         #submit{
-            background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
-            width: 100%;
+            font-family: 'Anek Devanagari', sans-serif;
+            background-color: black;
+            width: 28px%;
+            margin-left: 90px;
             border: none;
             padding: 15px;
             color: white;
-            font-size: 15px;
+            font-size: 20px;
             cursor: pointer;
             border-radius: 10px;
         }
-        #submit:hover{
-            background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
-        }
+
     </style>
 </head>
 <body>
