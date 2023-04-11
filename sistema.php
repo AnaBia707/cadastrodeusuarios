@@ -66,7 +66,7 @@
         </div>
     <br>
     <?php
-        echo "<h1>Bem vindo, <u>$logado</u></h1>";
+        echo "<h1>Bem vindo(a), <u>$logado</u></h1>";
     ?>
     <br>
     <div class="box-search">
