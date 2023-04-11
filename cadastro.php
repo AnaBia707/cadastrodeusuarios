@@ -185,6 +185,6 @@ if (isset($_POST['submit'])) {
 
 		<script>
 	function msg() {
-	alert("Sua solicitação foi enviada com sucesso!");
+	alert("Seu cadastro foi criado com sucesso!");
 	}
 	</script>
